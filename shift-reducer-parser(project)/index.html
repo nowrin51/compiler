@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift-Reduce Parser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gradient-background">
+
+
+    <div class="container">
+        <h1>Shift-Reduce Parser</h1>
+        <form id="parserForm" action="parser.php" method="post">
+            <label for="numProductions">Number of Productions:</label>
+            <input type="number" id="numProductions" name="numProductions" required>
+
+            <label for="productions">Productions (e.g., S->SS+):</label>
+            <textarea id="productions" name="productions" rows="5" required></textarea>
+
+            <label for="inputString">Input String:</label>
+            <input type="text" id="inputString" name="inputString" required>
+
+            <input type="submit" value="Parse">
+        </form>
+        <div id="outputContainer" class="output-container">
+            <!-- Parsing results will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
